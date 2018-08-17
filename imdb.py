@@ -25,7 +25,7 @@ def list(url):
 				tdd=cs.find('h4')
 				zd=tdd.text.strip()
 				print(zd)
-				file=open('movies.txt','w')
+				file=open('movies.txt','a')
 				file.write(zd+'\n')
 				
 	print("The list of movies will be saved in a text file")
