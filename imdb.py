@@ -13,7 +13,7 @@ y=soup.find('h3')
 print(y.text.strip())
 
 def list(url):
-	t=0
+	file=open('movies.txt','w')
 	h=urllib.request.urlopen(url)
 	soup=bs(h, "lxml")
 	table=soup.find('div')
@@ -26,14 +26,10 @@ def list(url):
 				tdd=cs.find('h4')
 				zd=tdd.text.strip()
 				print(zd)
-				if t==0:
-					file=open('movies.txt','w')
-					file.write(zd+'\n')
-				else:
-					file=open('movies.txt','a')
-					file.write(zd+'\n')
+				file.write(zd+'\n')
+				
 
-			t=t+1
+			
 
 
 				
