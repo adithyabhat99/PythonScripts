@@ -1,4 +1,5 @@
-from PIL import Image,ImageFilter	
+from PIL import Image,ImageFilter
+#edit images using Pillow
 try:
 	image=Image.open('lenna.png')
 	image.load()
