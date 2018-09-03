@@ -6,3 +6,4 @@ pdata=requests.get(hin)
 soup=bs(pdata.text,'html.parser')
 x=soup.title
 print(x.text.strip())
+#prints the title from india today website
