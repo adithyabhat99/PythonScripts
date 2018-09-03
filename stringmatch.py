@@ -1,12 +1,4 @@
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-# Complete the matchingStrings function below.
+#compares 2 lists,prints the number of times an element in queries list is repeated in strings list 
 def matchingStrings():
     strings=[]
     queries=[]
