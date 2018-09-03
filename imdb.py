@@ -1,4 +1,4 @@
-
+#prints the movies in theatres list and saves ina text file from imdb
 import html.parser
 from bs4 import BeautifulSoup as bs
 import requests
