@@ -1,3 +1,4 @@
+#basic python oop program with lists 
 class MYCLASS:
 		def __init__(self,amount,interest,time):
 			self.amount=amount
