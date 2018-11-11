@@ -3,7 +3,7 @@ from PIL import Image,ImageFilter
 try:
 	image=Image.open('lenna.png')
 	image.load()
-	print("The format,size and mode  of the image is", end='\t')
+	print("The format,size and mode  of the image is")
 	print(image.format,image.size,image.mode)
 
 	blurred=image.filter(ImageFilter.BLUR)
