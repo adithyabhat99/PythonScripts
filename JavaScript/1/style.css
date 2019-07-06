@@ -1,0 +1,142 @@
+:root{
+    background-image: url('./images/bg.jpg');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+h1,h2{
+    font-weight: normal;
+}
+a{
+    text-align:center;
+    display:block;
+}
+#wrapper{
+    width:90%;
+    max-width: 100%;
+    margin:20px auto;
+    border-radius: 6px;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 0px solid lightgray;
+    filter: alpha(opacity=50);
+}
+
+#page-banner{
+    padding: 10px 0;
+    border-radius:15px;
+}
+
+#page-banner h1, #page-banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input{
+    width:90%;
+    max-width:300px;
+    margin: 20px auto;
+    display:block;
+    padding: 8px;
+    border-radius: 15px;
+    outline-width: 0;
+    background: transparent;
+}
+
+
+
+.name{
+    list-style-type: none;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 50px;
+    align-content: center;
+    text-align: center;
+}
+
+#add-book .add-input{
+    width:90%;
+    max-width:300px;
+    margin: 20px auto;
+    display:block;
+    padding: 8px;
+    border-radius: 15px;
+    outline-width: 0;
+    background: transparent;
+}
+
+#add-book button{
+    width:90%;
+    max-width:100px;
+    margin: 20px auto;
+    display:block;
+    padding: 8px;
+    border-radius: 15px;
+    outline-width: 0;
+    color: white;
+    background: transparent;
+}
+
+#add-book button:hover{
+    background: #333;
+}
+
+#book-list{
+    max-width: 1300px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#book-list ul{
+    list-style-type: none;
+}
+#book-list li{
+    margin-bottom: 50px;
+}
+/*#book-list li:hover{
+    background: #333;
+}*/
+#book-list h1,h2{
+    list-style-type: none;
+    padding: 0;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    align-content: center;
+}
+
+.del{
+    background:transparent;
+    border-radius: 4px;
+    padding:6px;
+    margin-left: 50px;
+    cursor: pointer;
+    color:white;
+}
+.del:hover{
+    background: #333;
+}
+#book-list li:hover{
+    border-color: black;
+}
+#add-book::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+#add-book #hide{
+    display: inline;
+    max-width: 100%;
+    margin-left: 45%;
+}
+.panel{
+    display:none;
+}
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #4dd;
+    border-radius:4px;
+    cursor: pointer;
+    margin-right: 10px;
+}

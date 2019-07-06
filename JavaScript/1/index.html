@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="app_practice.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title>Adithya's Book List</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-banner">
+          <h1 class="title">Bookorama</h1>
+          <p>Book For Pros</p>
+          <a href="https://www.instagram.com/adithya_bhat_99/">My Instagram</a>
+          <form id="search-books">
+            <input type="text" placeholder="Search Books" />
+          </form>
+        </div>
+      </header>
+      <div id="book-list">
+        <h2 class="title">Books to read</h2>
+        <ul>
+          <li>
+            <span class="name">The Great Book of Adithya</span>
+            <span class="del">Delete</span>
+          </li>
+          <li>
+            <span class="name">The Greatest Book of Adithya2</span>
+            <span class="del">Delete</span>
+          </li>
+          <li>
+            <span class="name">The Great Book of Adithya3</span>
+            <span class="del">Delete</span>
+          </li>
+        </ul>
+      </div>
+      <form id="add-book">
+          <input type="checkbox" id="hide" />   
+          <label for="hide">Hide all books</label>
+        <input type="text" class="add-input" placeholder="Add book to the list" />
+        <button>Add</button>
+      </form>
+
+      <div id="tabbled-content">
+        <ul class="tabs">
+            <li data-target="#about">About</li>
+            <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel" id="about">
+                <p>Adithya Bhat</p>
+                <p>I am a computer science student at The National Institute of Engineering,Mysore</p>
+            </div>
+        <div class="panel" id="contact">
+            <p>Email</p>
+            <p>adithyabhatoct@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
