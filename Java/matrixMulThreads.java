@@ -19,11 +19,10 @@ public class matrixMulThreads implements Runnable {
 
     public void run() {
         a++;
-        for(int i=0;i<3;i++)
-        {
-            z[a][i]=0;
-            for(int j=0;j<3;j++)
-                z[a][i]+=x[a][j]*y[j][i];
+        for (int i = 0; i < 3; i++) {
+            z[a][i] = 0;
+            for (int j = 0; j < 3; j++)
+                z[a][i] += x[a][j] * y[j][i];
         }
     }
 
@@ -36,8 +35,12 @@ public class matrixMulThreads implements Runnable {
             M[i] = new Thread(m);
             M[i].start();
         }
-        // wait untill all 3 threads are dead
-        while (M[0].isAlive() || M[1].isAlive() || M[2].isAlive());
+        // wait untill all 3 threads are done,main thread has to wait for 3 threads to
+        // stop
+        // while (M[0].isAlive() || M[1].isAlive() || M[2].isAlive());
+        M[0].join();
+        M[1].join();
+        M[2].join();
         // print result
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
